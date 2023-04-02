@@ -3,6 +3,24 @@
 }
 
 
+.pelleBild {
+    position: absolute;
+    height: 100%;
+    width: 5%;
+}
+
+.jesperBild {
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    top: 50%;
+    left: 98%;
+
+    height: 100%;
+    width: 5%;
+}
+
 .title {
     position: absolute;
     -ms-transform: translate(-50%, -50%);
