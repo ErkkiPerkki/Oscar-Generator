@@ -1,12 +1,28 @@
+.body {
+    background-color: #333333;
+}
+
+
+.wallpaper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    height: 100%;
+    width: 100%;
+}
+
+
 .title {
     position: absolute;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    top: 10%;
+    top: 17.5%;
     left: 50%;
 
     font-family: monospace;
-    color: rgb(0, 0, 0);
+    color: #ffffff;
 
     font-size: 50px;
 }
@@ -23,11 +39,11 @@
 
     color: rgb(255, 255, 255);
     
-    background-color: #09ff68;
+    background-color: #62B98A;
     border-radius: 8px;
 
     width: 250px;
-    height: 125px;
+    height: 100px;
     font-size: 40px;
 }
 
@@ -36,7 +52,7 @@
     position: absolute;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    top: 42%;
+    top: 40.8%;
     left: 50%;
 
     font-family: monospace;
@@ -50,7 +66,7 @@
     position: absolute;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    top: 46.2%;
+    top: 45%;
     left: 50%;
 
     background-color: #e0e0e0;
