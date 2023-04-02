@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+<script>
+
+function getRandomInt(min, max) {
+
+min = Math.ceil(min);
+max = Math.floor(max);
+
+return Math.floor(Math.random() * (max - min) + min);
+
+}
+
+function generateOscar() {
+
+    var rhymes = "stationskarl emotta länstolar träklotsar löskokta handklovar harkrankar sällskapskarl genomskar arbetskarl fågelkarl lagerkarl karlakarl linstjälkar pissoar trottoar intalar oslagbar farfarsfar iakttar ofattbar solfjädrar utmärkta smällfeta andelar användbar exemplar föredrar kommentar spegelklar tomtefar underbar uppenbar yppersta ättefar övertar utbytta blanksvarta nattsvarta förfärar förnämsta omärkta förenta kärlekspar proberar solblekta betäckta daggstänkta framsträckta föräldrar hopknäppta käresta snötäckta argsinta artiklar inbillar testiklar tungsinta försilvrar ministrar belysta förkrympta förtryckta fördunklar skogskarl storkar storkarl tokar broddar fodrar godtar kokta mottar oklar snorta solklar stollar troppar snaskar gårdskarl badkar mankar raskar skalkar stavkarl trollkarl praktkarl särkar träkarl hästkarl linkar skrivkarl synkar körkarl sjökarl öskar lurkar tullkarl ungkarl poppar basar Ingvar försvar förvar fålar låsta nålar sårbar ballar naglar skapta standar svarta våldtar allvar ansvar kamrar tajta lägsta läkta trälar ärbar stärkta feta ledsnar sedlar brännbar frälsta längsta släckta sträckta stänglar väckta änglar bidrar stilar tistlar dyrbar kyssta nycklar tyngsta krökta krönta köpta lösta nötta smörar största tunnlar";
+    
+    rhymes = rhymes.split(" ");
+    var randRhyme = getRandomInt(0, rhymes.length-1);
+    var out = rhymes[randRhyme];
+
+    console.log(out)
+
+    document.getElementById("osar").innerHTML = "Oscar " + String(out)
+}
+
+</script>
+
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Title -->
+<b class="title">Random Oscar</b>
+
+<!-- Result -->
+<p id="osar" class="oscarText"></p>
+
+<!-- Regenerate Button -->
+<button type="button" class="generateButton" onClick="generateOscar()">Generate</button>
+
+
+</body>
+</html>
