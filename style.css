@@ -3,17 +3,6 @@
 }
 
 
-.wallpaper {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-
-    height: 100%;
-    width: 100%;
-}
-
-
 .title {
     position: absolute;
     -ms-transform: translate(-50%, -50%);
@@ -24,7 +13,7 @@
     font-family: monospace;
     color: #ffffff;
 
-    font-size: 50px;
+    font-size: 70px;
 }
 
 
