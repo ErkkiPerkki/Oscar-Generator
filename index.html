@@ -24,23 +24,28 @@ function generateOscar() {
     
     rhymes = rhymes.split(" ");
     var randRhyme = getRandomInt(0, rhymes.length-1);
-    var out = rhymes[randRhyme];
+    var randRhymeResult = rhymes[randRhyme]
+    var upperCasedRhyme = randRhymeResult.charAt(0).toUpperCase() + randRhymeResult.slice(1)
 
-    console.log(out)
-
-    document.getElementById("osar").innerHTML = "Oscar " + String(out)
+    document.getElementById("osar").innerHTML = "Oscar " + String(upperCasedRhyme)
 }
 
 </script>
 
-
 <link rel="stylesheet" href="style.css">
+
 
 <!-- Title -->
 <b class="title">Random Oscar</b>
 
+
+<!-- Result Box -->
+<div class="textBox"></div>
+
+
 <!-- Result -->
 <p id="osar" class="oscarText"></p>
+
 
 <!-- Regenerate Button -->
 <button type="button" class="generateButton" onClick="generateOscar()">Generate</button>
